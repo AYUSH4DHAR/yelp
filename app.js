@@ -29,19 +29,6 @@ mongoose.connect(url , {
     console.log("ERROR: " , err.message);
 });
 
-//wrote export DATABASEURL=mongodb://localhost:27017/yelp_camp in cli
-//mongoose.connect("mongodb://localhost:27017/yelp_camp" , { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
-
-// mongoose.connect("mongodb+srv://Mongod:Sara%402003@cluster0-rrz9x.mongodb.net/test?retryWrites=true&w=majority" , {
-//     useNewUrlParser: true,
-//     useCreateIndex:true ,
-//     useUnifiedTopology: true,
-//     useFindAndModify: false
-// }).then(()=>{
-//     console.log("connected to DB");
-// }).catch(err => {
-//     console.log("ERROR: " , err.message);
-// });
 
 app.use(bodyParser.urlencoded({extended : true}));
 app.set("view engine" , "ejs");
